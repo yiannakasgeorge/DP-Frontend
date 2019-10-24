@@ -1,1 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
+a.navbar-brand {
+    img.logo {
+        background-image: url("/assets/images/logo.png");
+        background-repeat: no-repeat;
+        width: 150px;  
+        height: 50px;   
+        margin: 0; 
+        padding: 0;
+    }
+} 
+   
