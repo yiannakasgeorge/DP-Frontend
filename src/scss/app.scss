@@ -10,7 +10,7 @@ body {
         height: 128px;
         margin: 0;
         padding: 0;
-        background-image: url("/assets/images/logo.png");
+        background-image: url("../assets/images/logo.png");
         background-repeat: no-repeat;
     }
     .btn-circle {
@@ -48,7 +48,7 @@ body {
         .about-us-bg {
             width: 100%;
             height: auto;
-            background-image: url("/assets/images/image2.png");
+            background-image: url("../assets/images/image2.png");
             background-repeat: no-repeat;
             background-position: right;
             background-size: contain;
@@ -74,7 +74,7 @@ body {
                 width: 100px;
                 height: 100px;
                 margin: 0 20px;
-                background-image: url("/assets/images/icon1.svg");
+                background-image: url("../assets/images/icon1.svg");
                 background-repeat: no-repeat;
                 background-position: left;
                 background-size: contain;
@@ -83,7 +83,7 @@ body {
                 width: 100px;
                 height: 100px;
                 margin: 0 20px;
-                background-image: url("/assets/images/icon2.svg");
+                background-image: url("../assets/images/icon2.svg");
                 background-repeat: no-repeat;
                 background-position: right;
                 background-size: contain;
@@ -128,19 +128,19 @@ body {
             }
         }
         .prod-2 .card-img {
-            background-image: url("/assets/images/wheat-prod2.jpg")
+            background-image: url("../assets/images/wheat-prod2.jpg")
         }
         .prod-3 .card-img {
-            background-image: url("/assets/images/barley-prod3.jpg")
+            background-image: url("../assets/images/barley-prod3.jpg")
         }
         .prod-4 .card-img {
-            background-image: url("/assets/images/rye-prod4.jpg")
+            background-image: url("../assets/images/rye-prod4.jpg")
         }
         .prod-5 .card-img {
-            background-image: url("/assets/images/beans-prod5.jpg")
+            background-image: url("../assets/images/beans-prod5.jpg")
         }
         .prod-6 .card-img {
-            background-image: url("/assets/images/peas-prod6.jpg")
+            background-image: url("../assets/images/peas-prod6.jpg")
         }
     }
     .logos {
