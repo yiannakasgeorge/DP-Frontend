@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require("webpack");
 
 module.exports = {
   entry: './src/app.js',
@@ -25,9 +26,13 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{
         from:'./src/assets/images',      
-        to:'assets/images/'   
+        to:'assets/images'   
     }]),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+    })
   ],
   module: {
     rules: [
@@ -45,10 +50,10 @@ module.exports = {
       },
       {
         test: [/.css$|.scss$/],   
-        use: [MiniCssExtractPlugin.loader,'css-loader','sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader','sass-loader'],
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -58,7 +63,15 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader',
+        options: {
+            name: 'fonts/[name].[ext]?[hash]',
+            publicPath: 'assets/fonts'
+        }
+       }
     ],
   },
   resolve: {extensions: ['.js', '.ts'] }
