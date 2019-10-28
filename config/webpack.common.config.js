@@ -61,14 +61,14 @@ module.exports = {
             //         }
             //     }]
             // },
-            {
-                test: /\.(woff(2)?|ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'fonts/[name].[ext]?[hash]',
-                    publicPath: 'assets/fonts'
-                }
-            },
+            // {
+            //     test: /\.(woff(2)?|ttf|eot|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: 'fonts/[name].[ext]?[hash]',
+            //         publicPath: 'assets/fonts'
+            //     }
+            // },
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
                 use: [{
