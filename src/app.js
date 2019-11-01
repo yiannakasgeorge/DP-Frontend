@@ -5,7 +5,8 @@ import { dom, library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 library.add(faSearch);
 
-$(".btn-search").click(function() {
+$(".btn-search").click(function(e) {
+    e.preventDefault();
     $('form.search-nav').find('input.search').toggleClass('d-none');
 });
 
