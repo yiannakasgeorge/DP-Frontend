@@ -50,6 +50,11 @@ header {
             flex-direction: row;
             justify-content: flex-end;
         }
+        .nav-item.active {
+            a {
+                color: #E0AE2D !important;
+            }
+        }
         a {
             color: rgba(0, 0, 0, 0.5);
             font-size: small;
@@ -66,12 +71,14 @@ header {
             text-align: end;
         }
         .search-nav {
-            align-self: flex-end;
+            align-self: baseline;
             display: flex;
             justify-content: flex-end;
         }
-        .nav-link.active {
-            color: #E0AE2D !important;
+        .nav-item.active {
+            a {
+                color: #E0AE2D !important;
+            }
         }
         .top-links {
             align-self: end;

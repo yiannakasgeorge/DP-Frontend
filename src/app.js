@@ -25,4 +25,18 @@ $(document).ready(function() {
         }, 400);
         return false;
     });
+    $('.top-nav.navbar-nav li').click(function(e) {
+        $('.top-nav.navbar-nav li').each(function(e) {
+            $(this).removeClass('active');
+        })
+
+        $(this).addClass('active');
+    });
+    $('nav .navbar-nav li').click(function(e) {
+        $('nav .navbar-nav li').each(function(e) {
+            $(this).removeClass('active');
+        })
+
+        $(this).addClass('active');
+    });
 });
