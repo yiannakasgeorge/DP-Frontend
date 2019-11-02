@@ -19,11 +19,12 @@ h6,
     margin-bottom: 2.0rem!important;
 }
 
-.navbar-light .navbar-nav .nav-link {
-     :hover {
-        color: #E0AE2D;
-    }
+.gold {
+    color: #E0AE2D;
 }
+
+
+/* HEADER */
 
 header {
     .logo {
@@ -34,13 +35,6 @@ header {
         background-image: url("../assets/images/logo.png");
         background-repeat: no-repeat;
     }
-    .top-bar ul {
-        list-style: none;
-        margin: 0 10px;
-        padding: 0;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
     .top-header-menu li {
         display: inline;
         padding: 10px;
@@ -49,32 +43,31 @@ header {
         height: 50px;
         flex-direction: row;
         display: flex;
+        ul {
+            list-style: none;
+            margin: 0 10px;
+            padding: 0;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        a {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: small;
+        }
+        .top-info {
+            text-align: right;
+        }
     }
-    .top-bar a {
-        color: rgba(0, 0, 0, 0.5);
-        font-size: small;
-    }
-    .top-bar .top-info {
-        text-align: right;
-    }
-    // .left {
-    //     flex: 1;
-    // }
-    // .right {
-    //     .right-top,
-    //     .right-bottom {
-    //         align-self: flex-end;
-    //     }
-    //     .right-top {
-    //         font-size: small;
-    //     }
-    //     flex: 1;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: start;
-    // }
     .navbar {
         .container {
+            justify-content: flex-end;
+        }
+        .navbar-collapse {
+            text-align: end;
+        }
+        .search-nav {
+            align-self: flex-end;
+            display: flex;
             justify-content: flex-end;
         }
         .nav-link.active {
@@ -97,27 +90,19 @@ header {
             background-color: #E0AE2D;
         }
     }
-    // @media (min-width: 340px) {
-    //     .navbar-nav.top-custom {
-    //         flex-direction: row!important;
-    //         .nav-link {
-    //             padding-right: 0.5rem;
-    //             padding-left: 0.5rem;
-    //         }
-    //     }
-    // }
 }
+
+
+/* MAIN CONTENT */
 
 .main-content {
     // max width large is the width of the main banner image
     .max-w-large {
         max-width: 1366px;
-        padding: 25px;
     }
     // max width small is the width shown on the screenshot for the rest of the rows
     .max-w-small {
         max-width: 1160px;
-        padding: 25px;
     }
     .border-line-1 {
         height: 5px;
@@ -128,12 +113,6 @@ header {
         border-top: 2px solid #E0AE2D;
         padding: 0px;
     }
-    // .nav-seperator {
-    //     margin-top: 10px;
-    // }
-    // .banner {
-    //     margin-top: 10px;
-    // }
     input,
     textarea {
         outline: 0;
@@ -141,6 +120,7 @@ header {
         border-color: #ced4da;
         padding: 0.375rem 0.75rem;
     }
+    /* ABOUT US */
     .about-us {
         .about-us-bg {
             width: 100%;
@@ -153,14 +133,10 @@ header {
         .about-us-text {
             z-index: 1;
             float: left;
-            width: 65%;
-            /*important*/
-            padding: 25px;
-            width: 50%;
-            /*important*/
             background: rgba(255, 255, 255, 0.5);
         }
     }
+    /* SERVICES */
     .services {
         background-color: #ECF3F0;
         .icons {
@@ -193,6 +169,7 @@ header {
             }
         }
     }
+    /* PRODUCTS */
     .products {
         .card {
             height: 100%;
@@ -258,6 +235,7 @@ header {
             }
         }
     }
+    /* CONTACT */
     .contact {
         .contact-details {
             background-color: #ECF3F0;
@@ -279,20 +257,30 @@ header {
         }
     }
     .newsletter {
-        .logo {
-            // margin-top: 20px; //TODO
-        }
+        // .logo {
+        //     // margin-top: 20px; //TODO
+        // }
         button.submit-newsletter-form {
             width: 100%;
             border: 2px solid #E0AA00;
             border-radius: unset;
         }
     }
+    /* MAP */
+    .map-content.max-w-large {
+        max-width: 1396px;
+    }
 }
+
+
+/* FOOTER */
 
 .footer-copyright {
     border-top: 1px solid #E6E6E6;
 }
+
+
+/* SCROLL TO TOP */
 
 .scroll-to-top {
     display: none;
