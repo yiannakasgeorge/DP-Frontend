@@ -19,6 +19,12 @@ h6,
     margin-bottom: 2.0rem!important;
 }
 
+.navbar-light .navbar-nav .nav-link {
+     :hover {
+        color: #E0AE2D;
+    }
+}
+
 header {
     .logo {
         width: 129px;
@@ -40,9 +46,9 @@ header {
         padding: 10px;
     }
     .top-bar {
-        // line-height: 10px;
-        // height: 40px;
-        height: 0px;
+        height: 50px;
+        flex-direction: row;
+        display: flex;
     }
     .top-bar a {
         color: rgba(0, 0, 0, 0.5);
@@ -68,6 +74,9 @@ header {
     //     justify-content: start;
     // }
     .navbar {
+        .container {
+            justify-content: flex-end;
+        }
         .nav-link.active {
             color: #E0AE2D !important;
         }
@@ -115,10 +124,16 @@ header {
     }
     .border-line-2 {
         height: 5px;
-        margin-top: -10px;
+        margin-top: 0px;
         border-top: 2px solid #E0AE2D;
         padding: 0px;
     }
+    // .nav-seperator {
+    //     margin-top: 10px;
+    // }
+    // .banner {
+    //     margin-top: 10px;
+    // }
     input,
     textarea {
         outline: 0;
