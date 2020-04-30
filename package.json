@@ -10,7 +10,7 @@
     "D": "^1.0.0",
     "bootstrap": "^4.3.1",
     "bootstrap4": "^0.0.1-security",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "npm-watch": "^0.6.0",
     "popper.js": "^1.16.0",
     "url-loader": "^2.2.0"
